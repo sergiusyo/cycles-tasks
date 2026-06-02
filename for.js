@@ -31,8 +31,20 @@
 // Вычислите факториал числа n (произведение всех чисел от 1 до n).
 // n = 6 → факториал = 720 (1*2*3*4*5*6)
 // let n = 6;
-// for (let index = 1; index <= 6; index++) {
+// for (let i = 1; i <= 6; i++) {
 //   let product = 1;
-//   product *= i;
+//     product *= i;
+//     console.log(n + product);
 // }
-// console.log(n + product);
+
+// Задача 5. Обратный порядок
+// Выведите все числа от n до 1 в обратном порядке.
+let n = Number(prompt("Введите число:"));
+
+if (n < 1) {
+  console.log("Ошибка: введите целое число больше 0");
+} else {
+  for (let i = n; i >= 1; i--) {
+    console.log(i);
+  }
+}
